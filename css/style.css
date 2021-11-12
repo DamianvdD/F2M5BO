@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
+body {
+    font-family: "Nunito", "Open Sans", Arial, Helvetica, sans-serif;
+    background: rgba(30, 7, 160);
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    background: #fff;
+    text-align: center;
+}
+
+header {
+    padding: 20px;
+    background: rgba(0, 13, 39);
+    color: #fff;
+    display: flex;
+}
+
+header h1 {
+    margin-bottom: 0;
+}
+
+nav {
+    padding: 20px;
+    background: rgb(254, 78, 2);
+    color: #fff;
+}
+
+.content {
+    background: #ffffff;
+    min-height: 100px;
+    padding: 20px;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    display: block;
+    padding: 5px 10px;
+    background: #fff;
+    color: #000;
+    text-decoration: none;
+    border-radius: 32px;
+}
+
+nav ul li .active, nav ul li a:hover {
+    color: #000;
+    background: #fff
+}
+
+aside {
+    background: rgb(86, 38, 202);
+    min-height: 100px;
+    padding: 20px;
+    color: white;
+    text-align: left;
+}
+
+aside a {
+    color: white;
+}
+
+aside a:hover {
+    color: rgb(254, 78, 2);
+}
+
+.top-10 ol {
+    margin: 0;
+    padding: 0 20px;
+}
+
+footer {
+    padding: 20px;
+    color: #fff;
+    background: rgba(0, 13, 39);
+    border-bottom-left-radius: 32px;
+    border-bottom-right-radius: 32px;
+}
+
+@media screen and (min-width: 900px) {
+    main {
+        grid-template-columns: 1fr 350px;
+    }
+
+    nav ul li a {
+        display: inline-block;
+    }
+
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+}
+
